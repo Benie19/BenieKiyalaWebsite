@@ -1,0 +1,199 @@
+.circular_image {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #222;
+}
+.Hero_section {
+  display: flex;
+  align-items: center;
+  min-height: 90vh;
+  background-color: #ffffff;
+}
+
+body {
+  background-color: #f8f9fa;
+  color: #212529;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.btn-professional {
+  background-color: #212529;
+  color: #fff;
+  border: 2px solid #212529;
+}
+
+.btn-professional:hover {
+  background-color: #343a40;
+  border-color: #343a40;
+}
+
+/* Nav  Styles */
+.nav-pills .nav-link {
+  color: #212529; /* normal link color */
+  background-color: transparent; /* remove default blue */
+  border-radius: 5px; /* slightly rounded for modern look */
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.nav-pills .nav-link:hover {
+  color: #343a40; /* slightly darker on hover */
+  background-color: #e9ecef; /* subtle highlight */
+}
+
+.nav-pills .nav-link.active {
+  color: #fff; /* text on active tab */
+  background-color: #212529; /* match your buttons */
+}
+
+/* Footer Styles */
+.bi-footer {
+  color: #212529;
+  background-color: transparent;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+/* Projects Styles */
+@media screen and (max-width: 1100px) {
+  .projects-container {
+    gap: 4vh;
+    margin-top: 20px;
+    width: 96%;
+  }
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 5vh;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1100px) {
+  .project-box {
+    padding-inline: 15px;
+    width: 100%;
+  }
+}
+
+.project-box {
+  align-items: flex-start;
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: left;
+  background-color: rgba(32, 178, 170, 0.07);
+  border-radius: 16px;
+  padding: 12px 26px;
+}
+
+.project-header {
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.project-box {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  text-align: left;
+  width: 40%;
+}
+
+#projectsHeader {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.section {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 25px;
+}
+
+.project-header img {
+  opacity: 0.75;
+  filter: grayscale(15%) brightness(0.95);
+  border-radius: 8px;
+  background-color: rgba(32, 178, 170, 0.1);
+  padding: 4px;
+  transition: all 0.3s;
+  max-width: 5vh;
+  height: auto;
+  width: 100%;
+  object-fit: contain;
+}
+
+.project-header img:hover {
+  opacity: 1;
+  filter: grayscale(0%) brightness(1);
+}
+/* Fun fact styles */
+#fun {
+  background: linear-gradient(135deg, #f9f7f1, #e0f7fa); /* soft gradient */
+  padding: 60px 20px;
+  border-radius: 12px;
+  text-align: center;
+  margin: 40px auto;
+  max-width: 800px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.fun-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.fun-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.fun-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.fun-items ul {
+  list-style: none; /* remove bullets */
+  padding: 0;
+  margin: 0;
+}
+
+.fun-items li {
+  background: #fff;
+  padding: 15px 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.fun-items li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  background-color: #e0f7fa;
+}
